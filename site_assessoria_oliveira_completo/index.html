@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliveira's Assessoria Acadêmica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-light-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.12) 0%, rgba(14, 165, 233, 0.06) 40%, rgba(248, 250, 252, 0) 75%);
+    }
+    .soft-grid {
+      background-size: 36px 36px;
+      background-image: linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Header -->
+  <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-40 transition shadow-sm">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-sm shadow-blue-500/30">O</span>
+        <span class="font-bold tracking-tight text-slate-900 text-base">Oliveira's Assessoria Acadêmica</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#faculdades" class="hover:text-blue-600 transition">Faculdades</a>
+        <a href="#servicos" class="hover:text-blue-600 transition">Serviços & Preços</a>
+        <a href="#como-funciona" class="hover:text-blue-600 transition">Como Funciona</a>
+        <a href="#faq" class="hover:text-blue-600 transition">Dúvidas</a>
+      </div>
+      <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20demanda%20acad%C3%AAmica." 
+         target="_blank" 
+         class="text-xs font-bold uppercase tracking-wider bg-blue-600 text-white px-4 py-2.5 rounded-lg hover:bg-blue-700 shadow-sm shadow-blue-500/20 transition">
+        Falar no WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative hero-light-glow soft-grid pt-20 pb-16 overflow-hidden border-b border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+        Orientação, Revisão e Estruturação Técnica
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+        Seu percurso acadêmico com clareza, segurança e <span class="text-blue-600">pontualidade.</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        Apoio individual e especializado para Projetos de Extensão, Projetos Integrados, TCC, Relatórios de Estágio, Artigos e atividades em ambientes virtuais (AVA).
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20de%20apoio%20acad%C3%AAmico.%20Podemos%20conversar?" 
+           target="_blank" 
+           class="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-blue-700 shadow-md shadow-blue-500/25 transition">
+          <span>Conversar pelo WhatsApp</span>
+          <span>↗</span>
+        </a>
+        <a href="#servicos" class="w-full sm:w-auto px-6 py-3.5 text-slate-700 hover:text-slate-900 font-semibold border border-slate-300 rounded-xl hover:bg-white transition bg-white/70 shadow-sm">
+          Ver tabela de valores ↓
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Faculdades Atendidas (8 Instituições com Logos Ampliadas e Fundo Transparente) -->
+  <section id="faculdades" class="py-16 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-xs uppercase tracking-widest text-blue-600 font-bold mb-3">
+        Experiência com as principais instituições
+      </p>
+      <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-12">Trabalhos estruturados conforme o padrão do seu portal</h3>
+
+      <!-- Grid com as 8 Faculdades -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6 items-center justify-items-center">
+        
+        <!-- 1. Anhanguera -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="aedu.png" alt="Anhanguera" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">Anhanguera</span>
+        </div>
+
+        <!-- 2. Estácio -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="estacio.png" alt="Estácio" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">Estácio</span>
+        </div>
+
+        <!-- 3. Cruzeiro do Sul -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="cru.png" alt="Cruzeiro do Sul" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">Cruzeiro do Sul</span>
+        </div>
+
+        <!-- 4. Unopar -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="uno.png" alt="Unopar" class="max-h-14 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">Unopar</span>
+        </div>
+
+        <!-- 5. UNG -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="ung.png" alt="UNG" class="max-h-14 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">UNG</span>
+        </div>
+
+        <!-- 6. UNINASSAU -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="nassau.png" alt="UNINASSAU" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">UNINASSAU</span>
+        </div>
+
+        <!-- 7. UNIFAEL -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="fael.png" alt="UNIFAEL" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">UNIFAEL</span>
+        </div>
+
+        <!-- 8. UniFECAF -->
+        <div class="w-full flex flex-col items-center justify-center p-2 group">
+          <div class="h-16 w-full flex items-center justify-center">
+            <img src="unifecaf.png" alt="UniFECAF" class="max-h-12 w-auto max-w-[95%] object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <span class="text-xs font-semibold text-slate-500 mt-2">UniFECAF</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabela de Serviços e Valores Exatos -->
+  <section id="servicos" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Investimento transparente</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Serviços e Valores</h2>
+      <p class="text-slate-600 text-sm mt-2">Preços definidos e alinhados antes do início do atendimento.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Projeto de extensão I, II, III, IV -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Extensão Universitária</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Projeto de extensão I, II, III, IV</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Estruturação e orientação para as etapas da atividade de extensão.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 150,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Projeto%20de%20extens%C3%A3o%20I,%20II,%20III,%20IV." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Projeto Integrado - Síntese -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Integração Curricular</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Projeto Integrado - Síntese</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Articulação teórica e síntese dos conteúdos do semestre.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 100,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20suporte%20no%20Projeto%20Integrado%20-%20S%C3%ADntese." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Projeto Integrado - Gestão -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Integração Curricular</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Projeto Integrado - Gestão</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Diagnóstico, plano de ação e aplicação prática gerencial.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 100,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20suporte%20no%20Projeto%20Integrado%20-%20Gest%C3%A3o." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Projeto Integrado - Inovação -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Integração Curricular</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Projeto Integrado - Inovação</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Modelagem de solução, proposta de valor e inovação.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 100,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20suporte%20no%20Projeto%20Integrado%20-%20Inova%C3%A7%C3%A3o." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Relatório de Aulas Práticas -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Prática Laboratorial</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Relatório de Aulas Práticas</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Estruturação completa dos dados, experimentos e conclusões.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 120,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20Relat%C3%B3rio%20de%20Aulas%20Pr%C3%A1ticas." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Só formatação -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Normas Técnicas</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Só formatação</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Margens, sumário automático, referências e citações na ABNT.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 70,00</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Quero%20apenas%20a%20formata%C3%A7%C3%A3o%20do%20meu%20trabalho." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Atividades Disponíveis no AVA - AV's -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Portal / AVA</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">ATIVIDADES DISPONÍVEIS NO AVA - AV's</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Acompanhamento e suporte orientado por atividade.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 20,00 <span class="text-xs font-normal text-slate-500">/ ativ.</span></span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20de%20suporte%20com%20AVs%20do%20AVA." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Atividades Complementares Obrigatórias (ACO) -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Horas Complementares</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">ATIVIDADES COMPLEMENTARES OBRIGATÓRIAS (ACO)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Organização e conferência documental por certificado.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-slate-900">R$ 20,00 <span class="text-xs font-normal text-slate-500">/ certif.</span></span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20validar%20certificados%20de%20ACO." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Contratar ↗</a>
+        </div>
+      </div>
+
+      <!-- Estágio Supervisionado -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Prática Profissional</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">ESTÁGIO SUPERVISIONADO</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Elaboração e organização de relatórios de estágio.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-xs text-slate-600 font-semibold bg-slate-100 px-2.5 py-1 rounded-md">Varia conforme curso</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20Est%C3%A1gio%20Supervisionado." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Consultar ↗</a>
+        </div>
+      </div>
+
+      <!-- Documentos Pedagógicos de estágio - Fichas -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Documentação</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Documentos Pedagógicos de estágio - Fichas</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Acompanhamento e suporte no preenchimento das fichas.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-xs text-slate-600 font-semibold bg-slate-100 px-2.5 py-1 rounded-md">Varia conforme curso</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20de%20suporte%20com%20as%20Fichas%20de%20Est%C3%A1gio." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Consultar ↗</a>
+        </div>
+      </div>
+
+      <!-- TCC -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Graduação / Pós</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">TCC</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Orientação metodológica e acompanhamento das etapas.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-xs text-slate-600 font-semibold bg-slate-100 px-2.5 py-1 rounded-md">Varia conforme curso</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20TCC." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Consultar ↗</a>
+        </div>
+      </div>
+
+      <!-- Artigo Científico -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition">
+        <div>
+          <span class="text-[10px] font-bold tracking-wider uppercase text-blue-600">Pesquisa & Publicação</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1">Artigo Cientifico</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">Revisão, estrutura e adequação ao manual institucional.</p>
+        </div>
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-baseline justify-between">
+          <span class="text-xs text-slate-600 font-semibold bg-slate-100 px-2.5 py-1 rounded-md">Varia conforme curso</span>
+          <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Artigo%20Cientifico." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">Consultar ↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Formas de Pagamento -->
+    <div class="mt-12 p-6 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+      <div>
+        <h4 class="font-bold text-slate-900 text-sm tracking-wide">FORMAS DE PAGAMENTO</h4>
+        <p class="text-xs text-slate-500 mt-0.5">Boleto, cartão e ou pix.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="px-4 py-2 bg-slate-100 border border-slate-200 text-slate-800 text-xs font-bold rounded-xl">Boleto</span>
+        <span class="px-4 py-2 bg-slate-100 border border-slate-200 text-slate-800 text-xs font-bold rounded-xl">Cartão</span>
+        <span class="px-4 py-2 bg-slate-100 border border-slate-200 text-slate-800 text-xs font-bold rounded-xl">Pix</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Etapas simples</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Como Funciona o Atendimento</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <span class="text-2xl font-black text-blue-600">01</span>
+          <h4 class="font-bold text-sm text-slate-900 mt-2 mb-1">Contato Inicial</h4>
+          <p class="text-xs text-slate-600">Você envia o tema, manual da faculdade e prazo de entrega.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <span class="text-2xl font-black text-blue-600">02</span>
+          <h4 class="font-bold text-sm text-slate-900 mt-2 mb-1">Análise & Plano</h4>
+          <p class="text-xs text-slate-600">Alinhamos cronograma, diretrizes institucionais e valores.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <span class="text-2xl font-black text-blue-600">03</span>
+          <h4 class="font-bold text-sm text-slate-900 mt-2 mb-1">Execução Técnica</h4>
+          <p class="text-xs text-slate-600">Desenvolvimento, adequação às normas e revisões periódicas.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80">
+          <span class="text-2xl font-black text-blue-600">04</span>
+          <h4 class="font-bold text-sm text-slate-900 mt-2 mb-1">Entrega Pontual</h4>
+          <p class="text-xs text-slate-600">Envio do material pronto para submissão no portal da sua faculdade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-extrabold text-slate-900 text-center mb-10">Dúvidas Frequentes</h2>
+    <div class="space-y-4">
+      <details class="group bg-white p-5 rounded-xl border border-slate-200 shadow-sm transition">
+        <summary class="flex justify-between items-center font-medium cursor-pointer text-slate-900 text-sm">
+          Como recebo os materiais concluídos?
+          <span class="transition group-open:rotate-180 text-blue-600">↓</span>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Os arquivos são enviados diretamente no seu WhatsApp ou por e-mail em formato editável (.docx) e com versão pronta para envio em (.pdf).
+        </p>
+      </details>
+      <details class="group bg-white p-5 rounded-xl border border-slate-200 shadow-sm transition">
+        <summary class="flex justify-between items-center font-medium cursor-pointer text-slate-900 text-sm">
+          Vocês atendem cursos de quaisquer áreas?
+          <span class="transition group-open:rotate-180 text-blue-600">↓</span>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Sim! Atendemos Gestão, Licenciaturas, Saúde, Tecnologia, Engenharias e Ciências Sociais Aplicadas.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Banner CTA Final -->
+  <section class="border-t border-slate-200 bg-slate-900 py-16 text-center text-white">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3">Pronto para destravar sua entrega?</h2>
+      <p class="text-slate-300 text-sm mb-6">Mande uma mensagem e receba retorno direto no WhatsApp.</p>
+      <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas." 
+         target="_blank" 
+         class="inline-block bg-blue-600 text-white text-sm font-semibold px-8 py-3.5 rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition">
+        Falar com a Assessoria Agora
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé Oficial Estruturado em 4 Colunas (Conforme o Modelo Enviado) -->
+  <footer class="bg-[#0b0f19] text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- Grid de 4 Colunas -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Coluna 1: CATEGORIAS -->
+        <div>
+          <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-700/60">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-white">CATEGORIAS</h4>
+          </div>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li><a href="#servicos" class="hover:text-blue-400 transition">TCC E MONOGRAFIA</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition">PROJETOS DE EXTENSÃO</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition">PROJETOS INTEGRADOS</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition">RELATÓRIOS DE ESTÁGIO</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition">FORMATAÇÃO ABNT</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition">ATIVIDADES NO AVA</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2: MINHA CONTA -->
+        <div>
+          <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-700/60">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-white">MINHA CONTA</h4>
+          </div>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li><a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" class="hover:text-blue-400 transition">Solicitar Orçamento</a></li>
+            <li><a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20meu%20pedido." target="_blank" class="hover:text-blue-400 transition">Acompanhar Pedido</a></li>
+            <li><a href="#como-funciona" class="hover:text-blue-400 transition">Prazos e Entregas</a></li>
+            <li><a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Preciso%20de%20suporte." target="_blank" class="hover:text-blue-400 transition">Suporte ao Aluno</a></li>
+            <li><a href="#faq" class="hover:text-blue-400 transition">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: CONTATO -->
+        <div>
+          <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-700/60">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-white">CONTATO</h4>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-400">💬</span>
+              <a href="https://wa.me/5511996337293" target="_blank" class="hover:text-white transition">11 99633-7293</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-blue-400">📞</span>
+              <a href="tel:5511996337293" class="hover:text-white transition">11 99633-7293</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-rose-400">📍</span>
+              <span>São Paulo - SP (Atendimento Online Nacional)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-amber-400">✉️</span>
+              <span>Atendimento via WhatsApp & E-mail</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: COMPRA SEGURA -->
+        <div>
+          <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-700/60">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+            </svg>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-white">COMPRA SEGURA</h4>
+          </div>
+          
+          <!-- Selos de Segurança Verticais -->
+          <div class="flex flex-col items-start gap-3">
+            
+            <!-- Selo 100% Qualidade Garantida -->
+            <div class="flex items-center gap-2.5">
+              <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 120 120">
+                <defs>
+                  <radialGradient id="goldGradFinal" cx="50%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#FFE259"/>
+                    <stop offset="50%" stop-color="#FFA751"/>
+                    <stop offset="100%" stop-color="#D47A00"/>
+                  </radialGradient>
+                </defs>
+                <path d="M60 2 L65 14 L78 8 L80 21 L93 18 L92 31 L105 32 L100 44 L112 49 L104 60 L112 71 L100 76 L105 88 L92 89 L93 102 L80 99 L78 112 L65 106 L60 118 L55 106 L42 112 L40 99 L27 102 L28 89 L15 88 L20 76 L8 71 L16 60 L8 49 L20 44 L15 32 L28 31 L27 18 L40 21 L42 8 L55 14 Z" fill="url(#goldGradFinal)" stroke="#B36200" stroke-width="2"/>
+                <circle cx="60" cy="60" r="40" fill="#E68A00"/>
+                <text x="60" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" font-weight="900" fill="#FFFFFF" text-anchor="middle">100%</text>
+              </svg>
+              <div class="text-left">
+                <span class="block text-[10px] font-bold text-amber-300 uppercase leading-none">QUALIDADE GARANTIDA</span>
+                <span class="text-[9px] text-slate-400">Satisfação 100% Assegurada</span>
+              </div>
+            </div>
+
+            <!-- Selo Site Seguro Google -->
+            <div class="flex items-center gap-2.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg w-full">
+              <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 40 40">
+                <path d="M20 2 L35 7 V19 C35 29 20 37 20 37 C20 37 5 29 5 19 V7 Z" fill="#00C853" stroke="#FFFFFF" stroke-width="1.5"/>
+                <path d="M14 20 L18 24 L27 15" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="text-left">
+                <span class="block text-[8px] font-bold text-slate-300 uppercase leading-none">SITE SEGURO</span>
+                <span class="block text-sm font-black text-white leading-none mt-0.5">Google</span>
+              </div>
+            </div>
+
+            <!-- Selo SSL Certificado -->
+            <div class="flex items-center rounded-lg overflow-hidden border border-white/10 w-full bg-white/5">
+              <div class="bg-amber-400 p-1.5 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-slate-900" viewBox="0 0 24 24">
+                  <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                </svg>
+              </div>
+              <div class="bg-emerald-600 px-2.5 py-1 text-left flex-1">
+                <span class="block text-[7px] font-bold text-white uppercase leading-none">SITE 100% SEGURO</span>
+                <span class="block text-xs font-black text-white leading-none mt-0.5">SSL CERTIFICADO</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior com Bandeiras de Pagamento e Copyright -->
+      <div class="pt-8 flex flex-col items-center justify-center gap-4 text-center">
+        
+        <!-- Bandeiras de Cartões -->
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <!-- PayPal -->
+          <div class="bg-white px-2 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11">
+            <span class="font-extrabold italic text-blue-800 text-[10px]">Pay<span class="text-cyan-500">Pal</span></span>
+          </div>
+          <!-- VISA -->
+          <div class="bg-white px-2 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11">
+            <span class="font-black italic text-blue-900 text-[11px] tracking-tighter">VISA</span>
+          </div>
+          <!-- MasterCard -->
+          <div class="bg-white px-2 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11">
+            <div class="flex -space-x-1 items-center">
+              <div class="w-3 h-3 rounded-full bg-red-600"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-400 opacity-90"></div>
+            </div>
+          </div>
+          <!-- American Express -->
+          <div class="bg-sky-600 px-1 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11 text-[7px] font-black text-white uppercase tracking-tighter text-center leading-none">
+            AMEX
+          </div>
+          <!-- Discover -->
+          <div class="bg-white px-1 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11">
+            <span class="font-black text-[8px] text-slate-800">DISC<span class="text-orange-500">O</span>VER</span>
+          </div>
+          <!-- PIX -->
+          <div class="bg-white px-2 py-1 rounded shadow-sm flex items-center justify-center h-6 w-11">
+            <span class="font-black text-teal-600 text-[9px]">PIX</span>
+          </div>
+        </div>
+
+        <!-- Copyright Atualizado -->
+        <p class="text-xs text-slate-400 font-normal">
+          &copy; Todos os direitos reservados | Oliveira's Assessoria Acadêmica
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5511996337293?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+     target="_blank" 
+     aria-label="Falar no WhatsApp" 
+     class="fixed bottom-6 right-6 w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 hover:bg-emerald-700 transition-all z-50">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
